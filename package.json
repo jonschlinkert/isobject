@@ -1,7 +1,7 @@
 {
   "name": "isobject",
   "description": "Is the value an object, and not an array or null?",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/isobject",
   "author": {
     "name": "Jon Schlinkert",
