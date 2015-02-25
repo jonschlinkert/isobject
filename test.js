@@ -5,17 +5,33 @@
  * Licensed under the MIT License.
  */
 
-var expect = require('chai').expect;
+var assert = require('assert');
 var isObject = require('./');
 
-it('when null is passed it should return false.', function () {
-  expect(isObject(null)).to.eql(false);
+it('should be true when the value is an object.', function () {
+  assert(isObject({}) === true);
+  assert(isObject(Object.create({})) === true);
+  assert(isObject(Object.create(Object.prototype)) === true);
+  assert(isObject({foo: 'bar'}) === true);
+  assert(isObject({}) === true);
+
+  function Foo() {this.abc = {};};
+
+  assert(isObject(/foo/) === true);
+  assert(isObject(new Foo) === true);
+  assert(isObject(Object.create(null)) === true);
+
 });
 
-it('when [] is passed it should return false.', function () {
-  expect(isObject([])).to.eql(false);
+it('should be true when the value is not an object.', function () {
+  assert(isObject(function () {}) === false);
+  assert(isObject(1) === false);
+  assert(isObject(['foo', 'bar']) === false);
+  assert(isObject([]) === false);
+  assert(isObject(null) === false);
+  assert(isObject([]) === false);
 });
 
-it('when {} is passed it should return true.', function () {
-  expect(isObject({})).to.eql(true);
+it('should be true when the value is null.', function () {
+  assert(isObject(null) === false);
 });
