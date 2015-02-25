@@ -2,6 +2,8 @@
 
 > Returns true if the value is an object and not an array or null.
 
+Use [is-plain-object](https://github.com/jonschlinkert/is-plain-object) if you want only objects that are created by the `Object` constructor.
+
 ## Install
 ```bash
 npm i isobject --save
@@ -11,12 +13,47 @@ npm i isobject --save
 
 ```js
 var isObject = require('isobject');
-console.log(isObject(null));
-//=> 'false'
-console.log(isObject([]));
-//=> 'false'
-console.log(isObject({}));
-//=> 'true'
+```
+
+**True**
+
+```js
+isObject({});
+//=> true
+
+isObject(Object.create({}));
+//=> true
+
+isObject(Object.create(Object.prototype));
+//=> true
+
+isObject(Object.create(null));
+//=> true
+
+isObject({});
+//=> true
+
+isObject(new Foo);
+//=> true
+
+isObject(/foo/);
+//=> true
+```
+
+**False**
+
+```js
+isObject(function () {});
+//=> false
+
+isObject(1);
+//=> false
+
+isObject([]);
+//=> false
+
+isObject(null);
+//=> false
 ```
 
 ## Author
