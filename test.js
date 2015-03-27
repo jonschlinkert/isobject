@@ -20,7 +20,7 @@ it('should be true when the value is an object.', function () {
   assert(isObject(/foo/) === true);
 });
 
-it('should be true when the value is not an object.', function () {
+it('should be false when the value is not an object.', function () {
   assert(isObject(function () {}) === false);
   assert(isObject(1) === false);
   assert(isObject(['foo', 'bar']) === false);
