@@ -55,6 +55,13 @@ isObject(null);
 //=> false
 ```
 
+## Related projects
+ * [is-plain-object](https://github.com/jonschlinkert/is-plain-object): Returns true if an object was created by the `Object` constructor.
+ * [kind-of](https://github.com/jonschlinkert/kind-of): Get the native type of a value.
+
+## Contributing
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/jonschlinkert/isobject/issues)
+
 ## Author
 
 **Jon Schlinkert**
@@ -63,7 +70,7 @@ isObject(null);
 + [twitter/jonschlinkert](http://twitter.com/jonschlinkert) 
 
 ## License
-Copyright (c) 2015 Jon Schlinkert  
+Copyright (c) 2014-2015 Jon Schlinkert  
 Released under the MIT license
 
 ***
