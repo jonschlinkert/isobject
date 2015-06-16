@@ -7,7 +7,8 @@
 
 'use strict';
 
+var isArray = require('isarray');
+
 module.exports = function isObject(o) {
-  return o != null && typeof o === 'object'
-    && !Array.isArray(o);
+  return o != null && typeof o === 'object' && !isArray(o);
 };

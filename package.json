@@ -43,5 +43,8 @@
     "value",
     "javascript",
     "check"
-  ]
+  ],
+  "dependencies": {
+    "isarray": "0.0.1"
+  }
 }
