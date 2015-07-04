@@ -1,7 +1,7 @@
 {
   "name": "isobject",
   "description": "Returns true if the value is an object and not an array or null.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/jonschlinkert/isobject",
   "author": {
     "name": "Jon Schlinkert",
@@ -32,16 +32,21 @@
     "mocha": "*"
   },
   "keywords": [
+    "check",
+    "function",
     "is",
-    "isobject",
     "is-object",
+    "isobject",
+    "javascript",
+    "kind",
+    "kind-of",
+    "kindof",
+    "native",
     "object",
+    "of",
     "type",
     "typeof",
-    "kind",
-    "kindof",
-    "value",
-    "javascript",
-    "check"
+    "validate",
+    "value"
   ]
 }
