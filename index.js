@@ -7,8 +7,7 @@
 
 'use strict';
 
-
-module.exports = function isObject(o) {
-  return Object.prototype.toString.call(o) === '[object Object]'
-    && typeof o === 'object';
+module.exports = function isObject(val) {
+  return Object.prototype.toString.call(val) === '[object Object]'
+    && typeof val === 'object';
 };
