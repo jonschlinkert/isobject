@@ -7,6 +7,7 @@ it('should be true when the value is an object.', function () {
   assert(isObject(Object.create({})));
   assert(isObject(Object.create(Object.prototype)));
   assert(isObject(Object.create(null)));
+  assert(isObject(/foo/));
 
   function Foo() {}
   assert(isObject(new Foo));
@@ -15,7 +16,6 @@ it('should be true when the value is an object.', function () {
 
 it('should be false when the value is not an object.', function () {
   assert(!isObject('whatever'));
-  assert(!isObject(/foo/));
   assert(!isObject(1));
   assert(!isObject(function () {}));
   assert(!isObject([]));

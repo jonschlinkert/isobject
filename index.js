@@ -8,6 +8,6 @@
 'use strict';
 
 module.exports = function isObject(val) {
-  return Object.prototype.toString.call(val) === '[object Object]'
-    && typeof val === 'object';
+  return val != null && typeof val === 'object'
+    && !Array.isArray(val);
 };
