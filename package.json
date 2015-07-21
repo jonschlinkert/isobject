@@ -40,13 +40,19 @@
     "javascript",
     "kind",
     "kind-of",
-    "kindof",
+    "is-object",
     "native",
     "object",
     "of",
     "type",
     "typeof",
-    "validate",
-    "value"
-  ]
+    "kind",
+    "kindof",
+    "value",
+    "javascript",
+    "check"
+  ],
+  "dependencies": {
+    "isarray": "0.0.1"
+  }
 }
