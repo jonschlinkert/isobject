@@ -1,23 +1,14 @@
 {
   "name": "isobject",
   "description": "Returns true if the value is an object and not an array or null.",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "homepage": "https://github.com/jonschlinkert/isobject",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/isobject.git"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/isobject",
   "bugs": {
     "url": "https://github.com/jonschlinkert/isobject/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jonschlinkert/isobject/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "files": [
     "index.js"
   ],
@@ -28,31 +19,36 @@
   "scripts": {
     "test": "mocha"
   },
+  "dependencies": {
+    "isarray": "0.0.1"
+  },
   "devDependencies": {
     "mocha": "*"
   },
   "keywords": [
     "check",
-    "function",
     "is",
     "is-object",
     "isobject",
-    "javascript",
     "kind",
     "kind-of",
-    "is-object",
+    "kindof",
     "native",
     "object",
-    "of",
     "type",
     "typeof",
-    "kind",
-    "kindof",
-    "value",
-    "javascript",
-    "check"
+    "value"
   ],
-  "dependencies": {
-    "isarray": "0.0.1"
+  "verb": {
+    "related": {
+      "list": [
+        "is-plain-object",
+        "kind-of",
+        "is-extendable",
+        "is-equal-shallow",
+        "extend-shallow",
+        "assign-deep"
+      ]
+    }
   }
 }
