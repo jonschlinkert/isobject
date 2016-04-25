@@ -23,7 +23,8 @@
     "isarray": "1.0.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "gulp-format-md": "^0.1.9",
+    "mocha": "^2.4.5"
   },
   "keywords": [
     "check",
@@ -42,13 +43,25 @@
   "verb": {
     "related": {
       "list": [
-        "is-plain-object",
-        "kind-of",
-        "is-extendable",
-        "is-equal-shallow",
+        "merge-deep",
         "extend-shallow",
-        "assign-deep"
+        "is-plain-object",
+        "kind-of"
       ]
-    }
+    },
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    },
+    "reflinks": [
+      "verb"
+    ]
   }
 }

@@ -1,8 +1,10 @@
-/* deps: mocha */
+'use strict';
+
+require('mocha');
 var assert = require('assert');
 var isObject = require('./');
 
-it('should be true when the value is an object.', function () {
+it('should be true when the value is an object.', function() {
   assert(isObject({}));
   assert(isObject(Object.create({})));
   assert(isObject(Object.create(Object.prototype)));
@@ -14,10 +16,10 @@ it('should be true when the value is an object.', function () {
   assert(isObject(new Foo()));
 });
 
-it('should be false when the value is not an object.', function () {
+it('should be false when the value is not an object.', function() {
   assert(!isObject('whatever'));
   assert(!isObject(1));
-  assert(!isObject(function () {}));
+  assert(!isObject(function() {}));
   assert(!isObject([]));
   assert(!isObject(['foo', 'bar']));
   assert(!isObject());
