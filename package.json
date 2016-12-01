@@ -19,8 +19,7 @@
   "scripts": {
     "test": "mocha"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp-format-md": "^0.1.9",
     "mocha": "^2.4.5"
@@ -42,10 +41,10 @@
   "verb": {
     "related": {
       "list": [
-        "merge-deep",
         "extend-shallow",
         "is-plain-object",
-        "kind-of"
+        "kind-of",
+        "merge-deep"
       ]
     },
     "toc": false,
@@ -62,5 +61,10 @@
     "reflinks": [
       "verb"
     ]
-  }
+  },
+  "contributors": [
+    "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)",
+    "(https://github.com/LeSuisse)",
+    "Tom MacWright <tom@macwright.org> (http://macwright.org)"
+  ]
 }
