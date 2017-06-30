@@ -4,17 +4,23 @@
   "version": "3.0.0",
   "homepage": "https://github.com/jonschlinkert/isobject",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "contributors": [
+    "(https://github.com/LeSuisse)",
+    "Brian Woodward (https://twitter.com/doowb)",
+    "Jon Schlinkert (http://twitter.com/jonschlinkert)",
+    "Magnús Dæhlen (https://github.com/magnudae)",
+    "Tom MacWright (https://macwright.org)"
+  ],
   "repository": "jonschlinkert/isobject",
   "bugs": {
     "url": "https://github.com/jonschlinkert/isobject/issues"
   },
   "license": "MIT",
   "files": [
-    "index.js",
-    "index.d.ts"
+    "index.d.ts",
+    "index.js"
   ],
   "main": "index.js",
-  "types": "index.d.ts",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -40,6 +46,7 @@
     "typeof",
     "value"
   ],
+  "types": "index.d.ts",
   "verb": {
     "related": {
       "list": [
@@ -63,10 +70,5 @@
     "reflinks": [
       "verb"
     ]
-  },
-  "contributors": [
-    "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)",
-    "(https://github.com/LeSuisse)",
-    "Tom MacWright <tom@macwright.org> (http://macwright.org)"
-  ]
+  }
 }

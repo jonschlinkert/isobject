@@ -10,11 +10,9 @@
   "main": [
     "index.js"
   ],
-  "dependencies": {
-    "isarray": "1.0.0"
-  },
   "devDependencies": {
-    "mocha": "*"
+    "gulp-format-md": "^0.1.9",
+    "mocha": "^2.4.5"
   },
   "keywords": [
     "check",
@@ -29,5 +27,30 @@
     "type",
     "typeof",
     "value"
-  ]
+  ],
+  "version": "3.0.0",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/isobject/issues"
+  },
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
+  "types": "index.d.ts",
+  "contributors": [
+    "(https://github.com/LeSuisse)",
+    "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)",
+    "Tom MacWright <tom@macwright.org> (http://macwright.org)"
+  ],
+  "ignore": [
+    "actual",
+    "bower_components",
+    "fixtures",
+    "node_modules",
+    "temp",
+    "test",
+    "test.js",
+    "tmp"
+  ],
+  "typings": "index.d.ts"
 }
