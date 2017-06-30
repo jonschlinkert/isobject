@@ -28,7 +28,7 @@
     "typeof",
     "value"
   ],
-  "version": "3.0.0",
+  "version": "3.0.1",
   "bugs": {
     "url": "https://github.com/jonschlinkert/isobject/issues"
   },
@@ -39,8 +39,10 @@
   "types": "index.d.ts",
   "contributors": [
     "(https://github.com/LeSuisse)",
-    "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)",
-    "Tom MacWright <tom@macwright.org> (http://macwright.org)"
+    "Brian Woodward (https://twitter.com/doowb)",
+    "Jon Schlinkert (http://twitter.com/jonschlinkert)",
+    "Magnús Dæhlen (https://github.com/magnudae)",
+    "Tom MacWright (https://macwright.org)"
   ],
   "ignore": [
     "actual",
