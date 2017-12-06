@@ -46,7 +46,6 @@ isObject({});
 isObject(Object.create({}));
 isObject(Object.create(Object.prototype));
 isObject(Object.create(null));
-isObject({});
 isObject(new Foo);
 isObject(/foo/);
 ```
