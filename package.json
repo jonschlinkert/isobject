@@ -27,7 +27,9 @@
   "scripts": {
     "test": "mocha"
   },
-  "dependencies": {},
+  "dependencies": {
+    "isarray": "^2.0.4"
+  },
   "devDependencies": {
     "gulp-format-md": "^0.1.9",
     "mocha": "^2.4.5"
