@@ -25,11 +25,6 @@ Install with [npm](https://www.npmjs.com/):
 ```sh
 $ npm install isobject
 ```
-Install with [bower](https://bower.io/)
-
-```sh
-$ bower install isobject
-```
 
 ## Usage
 
