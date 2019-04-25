@@ -1,8 +1,5 @@
-'use strict';
-
-require('mocha');
-var assert = require('assert');
-var isObject = require('./');
+import assert from 'assert';
+import isObject from './index.js';
 
 it('should be true when the value is an object.', function() {
   assert(isObject({}));
