@@ -16,13 +16,14 @@
     "url": "https://github.com/jonschlinkert/isobject/issues"
   },
   "license": "MIT",
+  "main": "index.cjs.js",
+  "module": "index.js",
+  "types": "index.d.ts",
   "files": [
     "index.d.ts",
     "index.cjs.js",
     "index.js"
   ],
-  "main": "index.cjs.js",
-  "module": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -52,7 +53,6 @@
     "typeof",
     "value"
   ],
-  "types": "index.d.ts",
   "verb": {
     "related": {
       "list": [
