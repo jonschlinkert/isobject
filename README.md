@@ -29,7 +29,7 @@ $ npm install isobject
 ## Usage
 
 ```js
-var isObject = require('isobject');
+import isObject from 'isobject';
 ```
 
 **True**
