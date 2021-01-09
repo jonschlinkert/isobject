@@ -6,5 +6,5 @@
  */
 
 export default function isObject(val) {
-  return val != null && typeof val === 'object' && val.constructor === Array;
+  return val != null && typeof val === 'object' && val.constructor !== Array;
 };
