@@ -49,6 +49,13 @@ npm run build
 npm test
 ```
 
+## Related projects
+
+- [extend-shallow](https://www.npmjs.com/package/extend-shallow): Extend an object with the properties of additional objects.
+- [is-plain-object](https://www.npmjs.com/package/is-plain-object): Check if an object was created by the `Object` constructor.
+- [kind-of](https://www.npmjs.com/package/kind-of): Get the native type of a value.
+- [merge-deep](https://www.npmjs.com/package/merge-deep): Recursively merge values in an object.
+
 ## License
 
 [MIT](LICENSE) © Jon Schlinkert
