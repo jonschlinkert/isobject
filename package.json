@@ -30,13 +30,12 @@
   },
   "scripts": {
     "build": "rollup -i index.js -o index.cjs.js -f cjs",
-    "test": "mocha",
+    "test": "node test.js",
     "prepublish": "npm run build"
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "2.4.5",
-    "rollup": "^1.10.1"
+    "rollup": "^4.62.4"
   },
   "keywords": [
     "check",
