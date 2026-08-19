@@ -9,13 +9,9 @@ permissions:
   contents: read
 
 jobs:
-  test:
-    name: Node.js ${{ matrix.node-version }}
+  build:
+    name: Build and test source
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        node-version: [18.x, 20.x]
 
     steps:
       - name: Check out repository
@@ -24,13 +20,45 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 20.x
 
       - name: Install dependencies
         run: npm install --ignore-scripts
 
-      - name: Test
+      - name: Test source
         run: npm test
 
       - name: Build
         run: npm run build
+
+      - name: Upload CommonJS build
+        uses: actions/upload-artifact@v4
+        with:
+          name: commonjs-build
+          path: index.cjs.js
+
+  compatibility:
+    name: Node.js ${{ matrix.node-version }}
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: ['0.10', '0.12', 18.x, 20.x]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download CommonJS build
+        uses: actions/download-artifact@v4
+        with:
+          name: commonjs-build
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Test published entry point
+        run: node test-compat.js
