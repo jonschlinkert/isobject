@@ -29,14 +29,13 @@
   },
   "scripts": {
     "build": "rollup -i index.js -o index.cjs.js -f cjs",
-    "test": "mocha -r esm",
+    "test": "mocha",
     "prepublish": "npm run build"
   },
   "dependencies": {},
   "devDependencies": {
-    "esm": "^3.2.22",
     "gulp-format-md": "^0.1.9",
-    "mocha": "^2.4.5",
+    "mocha": "2.4.5",
     "rollup": "^1.10.1"
   },
   "keywords": [

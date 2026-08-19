@@ -1,5 +1,7 @@
-import assert from 'assert';
-import isObject from './index.js';
+'use strict';
+
+var assert = require('assert');
+var isObject = require('./');
 
 it('should be true when the value is an object.', function() {
   assert(isObject({}));
@@ -9,7 +11,6 @@ it('should be true when the value is an object.', function() {
   assert(isObject(/foo/));
 
   function Foo() {}
-  assert(isObject(new Foo));
   assert(isObject(new Foo()));
 });
 
