@@ -27,7 +27,7 @@ jobs:
         run: npm install --ignore-scripts
 
       - name: Build and test
-        run: npm test
+        run: npm run build && npm test
 
       - name: Update npm for trusted publishing
         run: npm install --global npm@latest
