@@ -25,11 +25,8 @@ jobs:
       - name: Install dependencies
         run: npm install --ignore-scripts
 
-      - name: Test source
+      - name: Build and test
         run: npm test
-
-      - name: Build
-        run: npm run build
 
       - name: Upload CommonJS build
         uses: actions/upload-artifact@v4
@@ -44,7 +41,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: ['0.10', '0.12', 18.x, 20.x]
+        node-version: ['0.10', '0.12', 20.x, 22.x, 24.x]
 
     steps:
       - name: Check out repository
@@ -61,4 +58,4 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Test published entry point
-        run: node test-compat.js
+        run: node test.js

@@ -26,11 +26,8 @@ jobs:
       - name: Install dependencies
         run: npm install --ignore-scripts
 
-      - name: Test
+      - name: Build and test
         run: npm test
-
-      - name: Build
-        run: npm run build
 
       - name: Update npm for trusted publishing
         run: npm install --global npm@latest
