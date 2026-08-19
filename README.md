@@ -6,6 +6,8 @@
 
 > Returns `true` if a value is an object and not an array or `null`.
 
+Please consider following this project's author, [Jon Schlinkert](https://github.com/jonschlinkert), and starring the project to show your ❤️ and support.
+
 Use [is-plain-object](https://github.com/jonschlinkert/is-plain-object) if you only want objects created by the `Object` constructor.
 
 ## Install
