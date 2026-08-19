@@ -34,7 +34,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "gulp-format-md": "^0.1.9",
     "mocha": "2.4.5",
     "rollup": "^1.10.1"
   },
@@ -51,29 +50,5 @@
     "type",
     "typeof",
     "value"
-  ],
-  "verb": {
-    "related": {
-      "list": [
-        "extend-shallow",
-        "is-plain-object",
-        "kind-of",
-        "merge-deep"
-      ]
-    },
-    "toc": false,
-    "layout": "default",
-    "tasks": [
-      "readme"
-    ],
-    "plugins": [
-      "gulp-format-md"
-    ],
-    "lint": {
-      "reflinks": true
-    },
-    "reflinks": [
-      "verb"
-    ]
-  }
+  ]
 }
